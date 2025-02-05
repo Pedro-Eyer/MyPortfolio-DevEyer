@@ -134,9 +134,8 @@ section .topo-do-site .flex {
 }
 
 /* ESPECIALIDADES */
-section .especialidades {
-    padding: 40px 4%;
-
+section .especialidades  {
+    padding: 40px 4%; 
 }
 
 .especialidades .especialidades-box {
