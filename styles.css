@@ -93,10 +93,11 @@ header{
 
  /* TOPO DO SITE */
 
-section .topo-do-site {
+section.topo-do-site {
     padding: 40px 4%;
+    
 }
-section .topo-do-site .flex {
+section.topo-do-site .flex {
     justify-content: center;
     align-items: center;
     gap: 90px;
@@ -138,6 +139,7 @@ section .topo-do-site .flex {
 section.especialidades  {
     padding: 40px 4%; 
     margin-top: 100px;
+    box-shadow: 0px 0px 40px 10px #ffffff26;
 }
 
 .especialidades .flex{
@@ -170,6 +172,7 @@ section.especialidades  {
 /* SOBRE */
 section.sobre {
     padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff26;
 }
 
 section.sobre .flex {
@@ -197,7 +200,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+ .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -210,7 +213,7 @@ section.sobre .flex {
 
 }
 
-.sobre .txt-sobre .btn-social button:hover {
+ .btn-social button:hover {
     background-color: #FF6347;
     box-shadow: 0px 0px 8px  #FF6347;
     transform: scale(1.05);
@@ -227,8 +230,21 @@ section.sobre .flex {
  .img-port {
     width: 360px;
     height: 460px;
-    background-color: #FF4500;
+    background-color: #000000;
     margin-top: 35px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+ }
+
+ .img-port:hover{
+    background-position: 100% 100%;
+
+
+
  }
 
 section.portifolio .flex {
@@ -237,3 +253,126 @@ section.portifolio .flex {
     justify-content: space-around;
     
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff440076;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+/* CONTATO */
+section.formulario {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff26;
+    
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 45px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+form textarea {
+    resize: none;
+    max-height: 200px;  
+
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input[type="submit"] {
+    background-color: #FF4500;
+    font-size: 18px;
+    width: 120px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form .btn-enviar input[type="submit"]:hover {
+    background-color: #FF6347;
+    box-shadow: 0px 0px 8px  #FF6347;
+    transform: scale(1.05);
+    transition: .2s;
+} 
+
+/* FOOTER */
+footer {
+    box-shadow: 0px 0px 40px 10px #ffffff26;
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    
+}
+footer .line-footer p i{
+    color: #ff4500;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.borda {
+    border-top: 2px solid #FF4500;
+}
+
+footer a{
+    font-size: 40px;
+    font-weight: 700;
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+footer a:hover{
+    color: #FF4500;
+    transform: scale(1.05);
+ }
