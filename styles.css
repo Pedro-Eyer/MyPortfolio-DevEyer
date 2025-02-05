@@ -134,25 +134,31 @@ section .topo-do-site .flex {
 }
 
 /* ESPECIALIDADES */
-section .especialidades  {
+section.especialidades  {
     padding: 40px 4%; 
+    margin-top: 100px;
 }
 
-section .especialidades .flex{
+.especialidades .flex{
     justify-content: center;
     align-items: center;
     gap: 90px;
 }
 .especialidades .especialidades-box {
     color: white;
+    border-radius: 20px;
     padding: 40px;
-    border: 2px solid #FF4500;
     margin-top: 45px;
 }
-
+ /* testar com background*/
+.especialidades .especialidades-box:hover{
+    box-shadow: 0px 0px 20px  #ffffff;
+    transform: scale(1.05);
+    transition: .2s;
+}
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: #FF4500;
+    color: #ff4500;
 }
 
 .especialidades .especialidades-box h3{
@@ -160,6 +166,52 @@ section .especialidades .flex{
     margin: 20px 0;
 }
 
-section .especialidades .flex{
-    gap: 90px;
+/* SOBRE */
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre .txt-sobre {
+    color: #ffffff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #FF4500;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FF4500;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    
+
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+    background-color: #FF6347;
+    box-shadow: 0px 0px 8px  #FF6347;
+    transform: scale(1.05);
+    transition: .2s;
 }
