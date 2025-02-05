@@ -138,6 +138,28 @@ section .especialidades  {
     padding: 40px 4%; 
 }
 
+section .especialidades .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
 .especialidades .especialidades-box {
     color: white;
+    padding: 40px;
+    border: 2px solid #FF4500;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #FF4500;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+section .especialidades .flex{
+    gap: 90px;
 }
