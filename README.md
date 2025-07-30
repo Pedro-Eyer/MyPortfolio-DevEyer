@@ -6,7 +6,7 @@ O site é responsivo, moderno e foi pensado para transmitir minha identidade pro
 
 ## 🔗 Acesse o Portfólio
 
-➡️ [Clique aqui para ver o site publicado]([https://pedro-eyer.github.io/seu-repositorio/](https://my-portfolio-dev-eyer.vercel.app/))  
+➡️ [Clique aqui para ver o site publicado](https://my-portfolio-dev-eyer.vercel.app/)  
 
 
 ## 🛠️ Tecnologias Utilizadas
